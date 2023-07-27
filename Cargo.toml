@@ -21,7 +21,7 @@ bevy = { version = "0.11", default-features = false, features = [
 ] }
 bevy_eventlistener = { git = "https://github.com/aevyrie/bevy_eventlistener.git", branch = "main" } # "0.2"
 bevy_egui = { optional = true, version = "0.21" }
-bevy_rapier3d = { optional = true, version = "0.21" }
+bevy_rapier3d = { optional = true, version = "0.22" }
 
 # Local
 bevy_picking_core = { path = "crates/bevy_picking_core", version = "0.2" }
@@ -107,7 +107,3 @@ required-features = ["backend_egui"]
 name = "split_screen"
 path = "examples/split_screen.rs"
 required-features = ["backend_egui"]
-
-[patch.crates-io]
-bevy_mod_raycast = { git = 'https://github.com/aevyrie/bevy_mod_raycast', branch = 'main' }
-bevy_eventlistener = { git = 'https://github.com/aevyrie/bevy_eventlistener', branch = 'main' }
